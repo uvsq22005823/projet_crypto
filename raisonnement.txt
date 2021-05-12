@@ -1,0 +1,12 @@
+Pour commencer, la méthode pour le texte 1 a été donnée en TD.
+Cependant mon programme de décalage ne fonctionnant pas (il me semble qu'il fonctionnait lors du TD), j'ai créé une fonction de brute force pour une clé de longueur 1.
+Je ne suis pas sûr du résultat mais j'ai obtenu le 1er texte, donc j'ai avancé.
+
+Pour le second texte, j'ai essayé de remplacer automatiquement les lettres en fonction de leur fréquence par rapport aux fréquences des lettres dans l'alphabet français.
+Cela n'a (très peu étonnemment) pas foncitonné, et j'ai ensuite essayé de remplacer les lettres du texte jusqu'à obtenir quelque chose de cohérent.
+
+J'ai ensuite essayé de déterminer ce que pouvait être le premier mot du 3ème texte, en sachant qu'il été suivit d'une lettre seule (très probablement "a").
+J'ai d'abord essayé le mot "grace" et essayé tous les mots de passe possibles pour trouver le mot, sans succès (le mot de passe étant au maximum de longueur 4 car trop long à calculer si plus long).
+J'ai ensuite essayé avec le mot "bravo" et cela a fonctionné (la clef est "clez").
+
+Je n'ai cependant pas essayé de faire le 4ème texte.
