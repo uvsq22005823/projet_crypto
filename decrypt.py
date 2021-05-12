@@ -355,5 +355,47 @@ for j in range(len(liste_des_clef)):
 # Pour "bravo a" j'avais essayé "grace a" au depart mais cela n'avait pas fonctionne, donc j'ai essaye "bravo a" et ca a marche
 
 texte3_decode = "bravo a l'aide de l'indice vous avez reussi a casser ce code et a finir ce devoir. le dernier texte est pour les braves, regardez vous dans un miroir, en etes vous un ?"
+# On regarde le texte dans un miroir -> on retourne chaque phrase (ou vers ?)
+def retourner_texte(texte):
+    texte_a_lenvers = list(texte)
+    for i in range(len(texte)):
+        texte_a_lenvers[i] = texte[-i-1]
+    return str_convert(texte_a_lenvers)
 
+texte4 = ["jeqeqecvnf suozvb jfk muj",
+"dfjr fmy rvuqsk ve",
+"itajtd mifwz nnrt",
+"imtrvp zuh srzmzbqz tepr zn",
+"tmsnirt imtrvp nec hw",
+"dzpqj tjf pdecpr zl jr",
+"ptejnt ekpb iu b",
+"iiuyu iy ijz surg rjs ttsn",
+"votp ac hw rzpuen jozw",
+"rvwdvx jbo nirscyjv fi",
+"svmkyw ve iaflss yie te",
+"teffvv'u riznxjzvv jfk",
+"nelrhtjrk dh sivdvjvve",
+"yi cvb à jffrds tdp",
+"rvwdv sebr onvnqsy zvp",
+"zuhjwiM le wmifo wiezib nec",
+"triot qmjvr'c onrwz",
+"memfqg srq wdaietsq vk"]
+
+texte4_decode = []
+
+texte4_dune_traite = "jeqeqecvnf suozvb jfk muj dfjr fmy rvuqsk ve itajtd mifwz nnrt imtrvp zuh srzmzbqz tepr zn tmsnirt imtrvp nec hw dzpqj tjf pdecpr zl jr ptejnt ekpb iu b iiuyu iy ijz surg rjs ttsn votp ac hw rzpuen jozw rvwdvx jbo nirscyjv fi svmkyw ve iaflss yie te teffvv'u riznxjzvv jfk nelrhtjrk dh sivdvjvve yi cvb à jffrds tdp rvwdv sebr onvnqsy zvp zuhjwiM le wmifo wiezib nec triot qmjvr'c onrwz memfqg srq wdaietsq vk"
+
+#for i in range(len(texte4)):
+#    texte4_decode.append(decaler_les_lettres_en_bourrin(retourner_texte(texte4[i]), "bravez"))
+#    texte4_decode.append("\n")
+
+texte4_decode = decaler_les_lettres_en_bourrin(retourner_texte(texte4_dune_traite), "bravez")
+
+# J'ai essayé "brave" et ses dérivés pour la clef (braves, braver, bravons...)
+
+# J'ai d'abord obtenu un truc du genre : je voudrais pas crever avant d'avoir connu les chiens noirs du Mexique qui dorment sans rever les singes à cul nu devoreurs de tropiques les araignees d'argent au nid truffe de bulles
+# Puis j'ai abandonné
+
+print(str_convert(texte4_decode))
 racine.mainloop()
+
