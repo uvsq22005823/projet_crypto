@@ -9,4 +9,4 @@ J'ai ensuite essayé de déterminer ce que pouvait être le premier mot du 3ème
 J'ai d'abord essayé le mot "grace" et essayé tous les mots de passe possibles pour trouver le mot, sans succès (le mot de passe étant au maximum de longueur 4 car trop long à calculer si plus long).
 J'ai ensuite essayé avec le mot "bravo" et cela a fonctionné (la clef est "clez").
 
-Je n'ai cependant pas essayé de faire le 4ème texte.
+Pour le 4ème texte, j'ai essayé de retourner le texte (d'une traite et ligne par ligne) et d'utiliser "brave" et ses dérivés ("braver", "bravez", "bravons"...) comme mot de passe, sans succès.
